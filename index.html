@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Kendric</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body class="aquagreen darkTheme">
+    <main>
+        <div class="scrollExtent"></div>
+        <header class="container" id="header">
+            <h3 class="logo">Portfolio</h3>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="navlinks" id="chero">Home</a></li>
+                    <li><a class="navlinks" id="caboutMe">About</a></li>
+                    <li><a class="navlinks" id="cmy__skills">My Skills</a></li>
+                    <li><a class="navlinks" id="cservices">Services</a></li>
+                    <li><a class="navlinks" id="cprojects">Projects</a></li>
+                    <li><a class="navlinks" id="ccontact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggle();">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </header>
+        <div class="overlay" onclick="toggle();"></div>
+        <section class="hero container section__padding" id="hero">
+            <article class="textBox">
+                <div>
+                    <h3 class="hello">Hello, It's me</h3>
+                    <h1 class="name">John Kendric</h1>
+                    <h3 class="myspec">I'm a&nbsp;<span class="typed"></span></h3>
+                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eius distinctio odit, magni magnam qui ex perferendis vitae!</p>
+                    <ul class="socialBox">
+                        <li><a class="social-links"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="social-links"><i class="fab fa-github"></i></a></li>
+                        <li><a class="social-links"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="social-links"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <div class="btnBox">
+                        <a class="btn btn__scale">Download CV</a>
+                    </div>
+                </div>
+            </article>
+            <figure class="profileBox">
+                <svg class="profileBlob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="maskBlob" mask-type="alpha">
+                       <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                       170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                       447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                       587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                       438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                    </mask>
+                    <g mask="url(#maskBlob)">
+                       <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                       170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                       447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                       587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                       438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                 
+                       <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                    </g>
+                 
+                    <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
+                 
+                    <defs>
+                       <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                       </pattern>
+                 
+                       <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                       </pattern>
+                 
+                       <!-- Insert your profile (recommended size: 640 x 940) -->
+                       <image id="imageBlob" width="640" height="925" href="images/john.png"/>
+                    </defs>
+                 </svg>
+            </figure>
+        </section>
+        <section class="aboutMe section__padding" id="aboutMe">
+            <div class="section__wrapper">
+                <figure class="profileBox">
+                    <svg viewBox="0 0 550 592" class="profileBorder" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="maskBorder" mask-type="alpha">
+                        <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                        171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                        448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                        270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                        439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                        </mask>
+                        <g mask="url(#maskBorder)">
+                        <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
+                        
+                        <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                        </g>
+                    
+                        <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
+                    
+                        <defs>
+                        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
+                        </pattern>
+                    
+                        <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
+                        </pattern>
+                    
+                        <!-- Insert your profile (recommended size: 640 x 940) -->
+                        <image id="imageBorder" width="640" height="940" href="images/john.png"/>
+                        </defs>
+                    </svg>
+                </figure>
+                <article class="aboutContent">
+                    <h4 class="section__subtitle">My&nbsp;<span>Intro</span></h4>
+                    <h3 class="section__title">About Me</h3>
+                    <p class="about__intro section__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eius distinctio odit, magni magnam qui ex perferendis vitae!
+                    </p>
+                    <div class="btnBox">
+                      <a class="btn btn__scale">
+                        More About Me
+                    </a>  
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="my__skills section__padding bonus__padding container" id="my__skills">
+            <article class="col__2">
+                <h4 class="section__subtitle">
+                    Favorite&nbsp;<span>Skills</span>
+                </h4>
+                <h3 class="section__title">My Repetoire Of Skills</h3>
+                <p class="section__desc">
+                    See the skills I have under my belt in web development. These are the skills I have used to  build over 100 projects and counting. 
+                </p>
+                <div class="btnBox">
+                    <a class="btn btn__scale">See Projects</a>
+                </div>
+            </article>
+            <article class="col__2">
+                <ul class="col__1 skills__listBox">
+                    <li class="each__skill">HTML & CSS</li>
+                    <li class="each__skill">Javascript</li>
+                    <li class="each__skill">Bootstrap</li>
+                    <li class="each__skill">React</li>
+                </ul>
+                <ul class="col__1 skills__listBox">
+                    <li class="each__skill2">Git & Github</li>
+                    <li class="each__skill2">Figma</li>
+                    <li class="each__skill2">Sketch</li>
+                </ul>
+            </article>
+        </section>
+        <section class="services section__padding bonus__padding" id="services">
+            <article class="section__wrapper">
+                <h4 class="section__subtitle">My&nbsp;<span>Services</span></h4>
+                <h3 class="section__title">What I Do</h3>
+                <div class="section__wrapper cardBox">
+                    <article class="service__card">
+                        <h4 class="service__title">
+                            Web Developer
+                        </h4>
+                        <p class="section__desc">
+                            Development of custom web pages. 
+                            Using current technologies and 
+                            libraries of the labor field.
+                        </p>
+                    </article>
+                    <article class="service__card">
+                        <h4 class="service__title">
+                            UI/UX Designer
+                        </h4>
+                        <p class="section__desc">
+                            I offer design of web interfaces and 
+                            mobile applications, design made in 
+                            figma, adobe xd and sketch.
+                        </p>
+                    </article>
+                    <article class="service__card">
+                        <h4 class="service__title">
+                            Graphic Designer
+                        </h4>
+                        <p class="section__desc">
+                            I make designs at the client's request, 
+                            banner design, posters, digital 
+                            designs among others.
+                        </p>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section class="projects section__padding" id="projects">
+            <article class="section__wrapper">
+                <h4 class="section__subtitle">
+                    My&nbsp;<span>Projects</span>
+                </h4>
+                <h3 class="section__title">
+                    Recent Projects
+                </h3>
+            <div class="section__wrapper cardBox">
+                
+                <article class="project__card">
+                    <img src="images/project-img-1.jpg" alt="project__image">
+                    <article class="project__content">
+                        <h4 class="project__subtitle">Web</h4>
+                        <h3 class="project__title">Modern Website</h3>
+                        <a class="project__btn">View Demo &nbsp;<i class="fas fa-external-link-square"></i></a>  
+                    </article>
+                </article>
+                <article class="project__card">
+                    <img src="images/project-img-2.jpg" alt="project__image">
+                    <article class="project__content">
+                        <h4 class="project__subtitle">Web</h4>
+                        <h3 class="project__title">Modern Website</h3>
+                        <a class="project__btn">View Demo &nbsp;<i class="fas fa-external-link-square"></i></a>  
+                    </article>
+                </article>
+                <article class="project__card">
+                    <img src="images/project-img-3.jpg" alt="project__image">
+                    <article class="project__content">
+                        <h4 class="project__subtitle">Web</h4>
+                        <h3 class="project__title">Modern Website</h3>
+                        <a class="project__btn">View Demo &nbsp;<i class="fas fa-external-link-square"></i></a>  
+                    </article>
+                </article>
+                <article class="project__card">
+                    <img src="images/project-img-4.jpg" alt="project__image">
+                    <article class="project__content">
+                        <h4 class="project__subtitle">Web</h4>
+                        <h3 class="project__title">Modern Website</h3>
+                        <a class="project__btn">View Demo &nbsp;<i class="fas fa-external-link-square"></i></a>  
+                    </article>
+                </article>
+                <article class="project__card">
+                    <img src="images/project-img-5.jpg" alt="project__image">
+                    <article class="project__content">
+                        <h4 class="project__subtitle">Web</h4>
+                        <h3 class="project__title">Modern Website</h3>
+                        <a class="project__btn">View Demo &nbsp;<i class="fas fa-external-link-square"></i></a>  
+                    </article>
+                </article>
+                <article class="project__card">
+                    <img src="images/project-img-6.jpg" alt="project__image">
+                    <article class="project__content">
+                        <h4 class="project__subtitle">Web</h4>
+                        <h3 class="project__title">Modern Website</h3>
+                        <a class="project__btn">View Demo &nbsp;<i class="fas fa-external-link-square"></i></a>  
+                    </article>
+                </article>
+            </div>
+            </article>
+        </section>
+        <section class="contact section__padding" id="contact">
+            <h4 class="section__subtitle">
+                Get In&nbsp;<span>Touch</span>
+            </h4>
+            <h3 class="section__title">
+                Contact Me
+            </h3>
+            <div class="section__wrapper container">
+                <form action="" class="contact__form">
+                    <input type="text" class="user__data" placeholder="Enter your name" required>
+                    <input type="email" class="user__data" placeholder="Enter your email" required>
+                    <textarea name="user__message" id="user__message" cols="50" rows="20" placeholder="Enter your message" required></textarea>
+                    <input type="submit" value="Submit" class="btn btn__scale submit__btn">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <article class="container">
+            <div>
+                <article class="ft__content">
+                    <h4 class="section__subtitle">
+                        John Kendric
+                    </h4>
+                    <p class="ft__text">
+                        Frontend Developer
+                    </p>
+                </article>
+                <article class="ft__content ft__linkbox">
+                    <a class="ft__links">About</a>
+                    <a class="ft__links">Services</a>
+                    <a class="ft__links">Projects</a>
+                </article>
+                <ul class="socialBox">
+                    <li><a class="social-links"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="social-links"><i class="fab fa-github"></i></a></li>
+                    <li><a class="social-links"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="social-links"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <article class="ft__content copyright__box" id="copyright__box">
+                <small>Copyright © 2023, John Kendric - All rights reserved</small>
+            </article>
+        </article>
+
+        <!-- Floating Buttons============= -->
+        <article class="floating-btns">
+            <a class="scrollup floating-btn" id="scrollup"><i class="fas fa-arrow-up"></i></a>
+            <a class="controls floating-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm5 2h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm1-6h4v4h-4V5zM3 20a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6zm2-5h4v4H5v-4zm8 5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6zm2-5h4v4h-4v-4z"/></svg>
+            </a>
+            <article class="theme__box hide">
+                <article class="theme">
+                    <p>Choose theme</p>
+                    <div>
+                        <a class="light__theme toggleIn" id="light__theme" onclick="themeToggle('dark__theme','light__theme')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"/></svg>
+                        </a>
+                        <a class="dark__theme toggleOut" id="dark__theme" onclick="themeToggle('light__theme', 'dark__theme')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path d="M6.995 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007-2.246-5.007-5.007-5.007S6.995 9.239 6.995 12zM11 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2H2zm17 0h3v2h-3zM5.637 19.778l-1.414-1.414 2.121-2.121 1.414 1.414zM16.242 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.344 7.759 4.223 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"/></svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="theme__color">
+                    <p>Choose theme color</p>
+                    <a class="colors color1"></a>
+                    <a class="colors color2"></a>
+                    <a class="colors color3"></a>
+                    <a class="colors color4"></a>
+                    <a class="colors color5"></a>
+                    <a class="colors color6"></a>
+                    <a class="colors color7"></a>
+                    <a class="colors color8"></a>
+                </article>
+            </article>
+        </article>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
