@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Kendric</title>
     <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /
      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body class="aquagreen darkTheme">
@@ -328,18 +328,31 @@
                 </article>
                 <article class="theme__color">
                     <p>Choose theme color</p>
-                    <a class="colors color1"></a>
-                    <a class="colors color2"></a>
-                    <a class="colors color3"></a>
-                    <a class="colors color4"></a>
-                    <a class="colors color5"></a>
-                    <a class="colors color6"></a>
-                    <a class="colors color7"></a>
-                    <a class="colors color8"></a>
+                    <article>
+                        <a class="colors color1"></a>
+                        <a class="colors color2"></a>
+                        <a class="colors color3"></a>
+                        <a class="colors color4"></a>
+                        <a class="colors color5"></a>
+                        <a class="colors color6"></a>
+                        <a class="colors color7"></a>
+                        <a class="colors color8"></a>
+                        <a class="colors color9"></a>
+                    </article>
                 </article>
             </article>
         </article>
     </footer>
+    <script>
+      //======== Typing Text Animation ==========
+      var typed = new Typed('.typed', {
+    strings: ["Web Developer", "Programmer", "Freelancer", "UI/UX Designer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 700,
+    loop: true
+  });
+    </script>
     <script src="main.js"></script>
 </body>
 </html>

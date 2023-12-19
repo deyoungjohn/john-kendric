@@ -1,3 +1,33 @@
+=======NOTES, ERRORS AND IMPROVEMENTS =======
+Position section content at the middle in large screens
+Handle arrangement of elements in Themebox on small screens and add box shadow to theme box
+Project card destination on large screens
+//More about me button overflows on medium screens,remove bonus padding from aboutMe and restyle it, add bonus padding to myskills and services on desktop, then determine new number for  isContactSectionVisible. Its currently 3000
+//Something isnt right about profile images at the top
+//Initial highlighting of active section on mobile doesnt work just as fine
+//Add more theme colors
+//Figure out the code used in typing text animation library
+
+
+======= POINTS AND LESSONS NOTEWORTHY =======
+1. document.documentElement.scrollTop==window.scrollY
+2. document.documentElement.scrollHeight==body.offsetHeight
+3. But document.documentElement.clientHeight!==body.clientHeight
+
+===== THEME COLORS =====
+Primary Blue: #3498db
+Dark Gray: #2c3e50
+Accent Green: #2ecc71
+Light Gray: #ecf0f1
+Deep Purple: #9b59b6
+Soft Yellow: #f1c40f
+Elegant Red: #e74c3c
+Teal: #008080
+Muted Orange: #d35400
+Cool Cyan: #00bcd4
+Remote Integrators : #cb943c
+Pure blue: #3d02df
+
 <nav class="navbar">
     <ul>
         <li><a href="#hero" class="navlinks" onclick="navlink();" id="chero">Home</a></li>

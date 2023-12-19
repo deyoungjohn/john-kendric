@@ -2,7 +2,7 @@
 body=document.body
 
 // Random Theme Color On Page Load
-colorClass=['orange', 'gold', 'burlywood', 'fuchsia', 'lightblue', 'blue', 'green', 'aquagreen']
+colorClass=['orange', 'gold', 'burlywood', 'fuchsia','green', 'aquagreen', 'primaryblue', 'blue', 'lightblue']
 document.addEventListener('DOMContentLoaded',()=>{
     randomClass=colorClass[Math.floor(Math.random()*colorClass.length)]
     currentClass=body.classList[0]
@@ -10,14 +10,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     activeTheme()
 })
 
-//======== Typing Text Animation ==========
-var typed = new Typed('.typed', {
-    strings: ["Web Developer", "Programmer", "Freelancer", "UI/UX Designer"],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 700,
-    loop: true
-  });
+
 
 //======= Hamburger =======//
 function toggle(){
@@ -61,9 +54,6 @@ projectCards.forEach(card=>{
 
 
 // ======= Scroll Extent Indicator ========
-// document.documentElement.scrollTop==window.scrollY
-// document.documentElement.scrollHeight==body.offsetHeight
-// document.documentElement.clientHeight!==body.clientHeight
 document.addEventListener('scroll', function () {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -72,21 +62,8 @@ document.addEventListener('scroll', function () {
 });
 
 
-
-
-//Position section content at the middle in large screens
-//Handle arrangement of elements in Themebox on small screens and add box shadow to theme box
-//Project card destination on large screens
-//More about me button overflows on medium screens,remove bonus padding from aboutMe and restyle it, add bonus padding to myskills and services on desktop, then determine new number for  isContactSectionVisible. Its currently 3000
-//Something isnt right about profile images at the top
-//Initial highlighting of active section on mobile doesnt work just as fine
-
-//Remove btn animation
-//Add more theme colors
-//Typing Text Animation
-
 // ========= Theme and Theme Color Toggles ===========
-// Themebox
+// Themebox Toggle
 toolsIconToggle=document.querySelector('.controls')
 floatingButtons=document.querySelectorAll('.floating-btn')
 toolsIconToggle.onclick=()=>{
@@ -94,7 +71,7 @@ toolsIconToggle.onclick=()=>{
     themebox.classList.toggle('hide')
     floatingButtons.forEach(button=>{button.classList.toggle('active')})
 }
-// Theme
+// Lightr and Dark Theme Toggle
 const themeToggle=(current, previous)=>{
     current=document.getElementById(current)
     previous=document.getElementById(previous)
@@ -107,8 +84,8 @@ const themeToggle=(current, previous)=>{
 }
 // Theme Colors
 colors=document.querySelectorAll('.colors')
-colorss=['color1', 'color2', 'color3', 'color4', 'color5', 'color6', 'color7', 'color8']
-colorClass=['orange', 'gold', 'burlywood', 'fuchsia', 'lightblue', 'blue', 'green', 'aquagreen']
+colorss=['color1', 'color2', 'color3', 'color4', 'color5', 'color6', 'color7', 'color8', 'color9']
+colorClass=['orange', 'gold', 'burlywood', 'fuchsia','green', 'aquagreen', 'primaryblue', 'blue', 'lightblue']
 colors.forEach(color=>{
     color.onclick=()=>{
         index=colorss.indexOf(color.classList[1]);
