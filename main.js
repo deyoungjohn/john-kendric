@@ -180,7 +180,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //======== Typing Text Animation ==========
+
 var typed = new Typed('.typed', {
+
     strings: ["Web Developer", "Programmer", "Freelancer", "UI/UX Designer"],
     typeSpeed: 100,
     backSpeed: 50,
