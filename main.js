@@ -10,6 +10,17 @@ document.addEventListener('DOMContentLoaded',()=>{
     activeTheme()
 })
 
+//======== Typing Text Animation ==========
+
+var typed = new Typed('.typed', {
+
+    strings: ["Web Developer", "Programmer", "Freelancer", "UI/UX Designer"],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 700,
+    loop: true
+  });
+  
 
 //======= Hamburger =======//
 function toggle(){
@@ -179,16 +190,6 @@ document.addEventListener("DOMContentLoaded", function () {
     highlightActiveLink();
 });
 
-//======== Typing Text Animation ==========
-
-var typed = new Typed('.typed', {
-
-    strings: ["Web Developer", "Programmer", "Freelancer", "UI/UX Designer"],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 700,
-    loop: true
-  });
 // For contact 427
 
 
